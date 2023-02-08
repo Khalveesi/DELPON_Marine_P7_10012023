@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+.font__color--primary {
+  color: #ff6060;
+}
+.font__color--secondary {
+  color: #ffffff;
+}
+
+.bc__color--primary {
+  background-color: #ff6060;
+}
+
+/*# sourceMappingURL=main.css.map */

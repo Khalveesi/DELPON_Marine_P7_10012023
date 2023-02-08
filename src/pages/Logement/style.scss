@@ -1,0 +1,67 @@
+.temporary {
+    width: 1240px;
+    height: 415px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+.logement__informations {
+    display: flex;
+    justify-content: space-between;
+}
+.logement {
+    &__location {
+        display: flex;
+        flex-direction: column;
+    }
+    &__tags {
+        display: flex;
+        flex-direction: row;
+    }
+    &__title {
+        font-size: 36px;
+    }
+    &__location {
+        font-size: 18px;
+    }
+    &__owner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        > img {
+            border-radius: 100px;
+            height: 64px;
+        }
+    }
+    &__rate {
+        margin-top: 20px;
+        font-size: 25px;
+        > i {
+            padding: 5px;
+        }
+    }
+    &__gap {
+        gap: 10px;
+    }
+    &__top-margin {
+        margin-top: 20px;
+    }
+}
+
+.container {
+    &--size {
+        height: 77px;
+    }
+}
+
+.logement {
+    &__accordion-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: 25px;
+    }
+    &__accordion {
+        flex: 1;
+    }
+}

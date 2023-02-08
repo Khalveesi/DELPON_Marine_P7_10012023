@@ -1,0 +1,22 @@
+$primary-color: #ff6060;
+$secondary-color: #ffffff;
+
+body {
+    margin: 0;
+}
+
+.font__color {
+    &--primary {
+        color: $primary-color;
+    }
+
+    &--secondary {
+        color: $secondary-color;
+    }
+}
+
+.bc__color {
+    &--primary {
+        background-color: $primary-color;
+    }
+}

@@ -1,0 +1,12 @@
+.accordion {
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 24px;
+    &__title {
+        padding: 5px 10px;
+    }
+    &__content {
+        background-color: #f6f6f6;
+        padding: 18px 10px 10px 10px;
+    }
+}
