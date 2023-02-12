@@ -1,8 +1,23 @@
+@import "../../mixins.scss";
+
 .about {
     &__accordions {
         display: flex;
         flex-direction: column;
         gap: 50px;
-        padding: 0 70px;
+        padding-bottom: 15px;
+        @include media-desktop {
+            padding: 0 70px;
+        }
+    }
+    &__banner {
+        background-size: cover;
+        height: 230px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        @include media-desktop {
+            background-size: cover;
+            height: 223px;
+        }
     }
 }

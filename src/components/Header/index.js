@@ -8,7 +8,7 @@ function Header() {
     }
     return (
         <header>
-            <Logo size={64} className="font__color--primary" />
+            <Logo size={32} className="font__color--primary" />
             <nav className="font__color--primary">
                 <NavLink to="/" className={applyActiveClassName}>
                     Accueil

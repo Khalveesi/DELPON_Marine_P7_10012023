@@ -1,27 +1,41 @@
-.banner {
+@import "../../mixins.scss";
+
+.home__banner {
     background-size: cover;
     display: flex;
-    height: 223px;
-    margin-bottom: 60px;
-    border-radius: 40px;
-    &__inner {
+    height: 110px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    @include media-desktop {
+        height: 223px;
+        margin-bottom: 60px;
+    }
+    &--inner {
         display: flex;
         align-items: center;
         justify-content: center;
         flex: 1;
         background-color: rgba(black, 0.3);
-        border-radius: 40px;
     }
     .font-size {
-        font-size: 68px;
+        font-size: 30px;
+        @include media-desktop {
+            font-size: 68px;
+        }
     }
 }
 
 .logements-card {
     background-color: #f7f7f7;
     border-radius: 25px;
-    padding: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+
+    @include media-desktop {
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        padding: 50px;
+        gap: 50px;
+    }
 }

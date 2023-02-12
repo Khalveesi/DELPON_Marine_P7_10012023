@@ -6,7 +6,7 @@ function About() {
     return (
         <>
             <section
-                className="banner"
+                className="about__banner"
                 style={{ backgroundImage: `url(${backgroundAbout})` }}
             ></section>
             <section className="about__accordions">

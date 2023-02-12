@@ -20,7 +20,7 @@ function Accordion({ children, title, openDefault = true, className = "" }) {
                 }}
             >
                 {title}
-                <i class="fa-solid fa-chevron-down chevron"></i>
+                <i className="fa-solid fa-chevron-down chevron"></i>
             </div>
             {isOpen && (
                 <div className="accordion__content font__color--primary">

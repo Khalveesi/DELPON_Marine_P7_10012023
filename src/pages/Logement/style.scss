@@ -1,26 +1,44 @@
+@import "../../mixins.scss";
+
 .logement__informations {
-    display: flex;
-    justify-content: space-between;
+    @include media-desktop {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 .logement {
-    &__location {
-        display: flex;
-        flex-direction: column;
+    &__block1 {
+        font-size: 18px;
+    }
+    &__block2 {
+        @include media-mobile {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            padding-top: 15px;
+        }
     }
     &__tags {
         display: flex;
         flex-direction: row;
+        @include media-mobile {
+            flex-wrap: wrap;
+        }
     }
     &__title {
         font-size: 36px;
-    }
-    &__location {
-        font-size: 18px;
+        @include media-mobile {
+            word-break: break-all;
+            font-size: 27px;
+        }
     }
     &__owner {
         display: flex;
         flex-direction: row;
         align-items: center;
+        @include media-mobile {
+            order: 1;
+        }
         > img {
             border-radius: 100px;
             height: 64px;
@@ -28,6 +46,9 @@
     }
     &__rate {
         font-size: 25px;
+        @include media-mobile {
+            font-size: 20px;
+        }
         > i {
             padding: 5px;
         }
@@ -40,12 +61,6 @@
     }
 }
 
-.container {
-    &--size {
-        height: 77px;
-    }
-}
-
 .logement {
     &__accordion-container {
         display: flex;
@@ -53,6 +68,9 @@
         justify-content: space-between;
         gap: 30px;
         margin-top: 25px;
+        @include media-mobile {
+            flex-direction: column;
+        }
     }
     &__accordion {
         flex: 1;

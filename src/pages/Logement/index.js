@@ -13,8 +13,8 @@ function Logement() {
             <Carousel pictures={logement.pictures} />
             <section className="logement__informations logement__top-margin">
                 <div className="font__color--primary">
-                    <div className="logement__location gap">
-                        <div className="container--size">
+                    <div className="logement__block1 gap">
+                        <div>
                             <div className="logement__title ">
                                 Logement:{logement.title}
                             </div>
@@ -27,17 +27,17 @@ function Logement() {
                         </div>
                     </div>
                 </div>
-                <div className="font__color--primary logement__location">
-                    <div className="logement__owner logement__gap container--size">
+                <div className="font__color--primary logement__block2">
+                    <div className="logement__owner logement__gap">
                         {logement.host.name}
                         <img src={logement.host.picture} alt="propriétaire" />
                     </div>
                     <div className="logement__rate logement__top-margin">
-                        {range.map((rangeElem) =>
+                        {range.map((rangeElem, key) =>
                             rating >= rangeElem ? (
-                                <i class="fa-solid fa-star"></i>
+                                <i key={key} className="fa-solid fa-star"></i>
                             ) : (
-                                <i class="fa-regular fa-star"></i>
+                                <i key={key} className="fa-regular fa-star"></i>
                             )
                         )}
                     </div>

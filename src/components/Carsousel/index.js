@@ -21,10 +21,10 @@ function Carousel({ pictures }) {
                         className="font__color--secondary"
                         onClick={previous}
                     >
-                        <i class="fa-solid fa-chevron-left"></i>
+                        <i className="fa-solid fa-chevron-left"></i>
                     </button>
                     <button className="font__color--secondary" onClick={next}>
-                        <i class="fa-solid fa-chevron-right"></i>
+                        <i className="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
                 <div className="carousel__index font__color--secondary">

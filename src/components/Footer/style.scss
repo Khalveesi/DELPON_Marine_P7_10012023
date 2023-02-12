@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 footer {
     display: flex;
     flex-direction: column;
@@ -7,6 +9,9 @@ footer {
     width: 100%;
     span {
         padding-top: 28px;
-        font-size: 24px;
+        font-size: 20px;
+        @include media-desktop {
+            font-size: 24px;
+        }
     }
 }

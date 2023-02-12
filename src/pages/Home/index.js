@@ -8,10 +8,10 @@ function Home() {
     return (
         <>
             <section
-                className="banner"
+                className="home__banner"
                 style={{ backgroundImage: `url(${backgroundHome})` }}
             >
-                <div className="banner__inner">
+                <div className="home__banner--inner">
                     <span className="font-size font__color--secondary">
                         Chez vous, partout et ailleurs
                     </span>
