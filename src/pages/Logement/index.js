@@ -2,12 +2,16 @@ import "./style.scss";
 import Tag from "../../components/Tag/index.js";
 import Accordion from "../../components/Accordion/index.js";
 import { useLoaderData } from "react-router-dom";
+import { useEffect } from "react";
 import Carousel from "../../components/Carsousel";
 
-function Logement() {
+function Logement({ title }) {
     const { logement } = useLoaderData();
     const rating = parseInt(logement.rating);
     const range = [1, 2, 3, 4, 5];
+    useEffect(() => {
+        document.title = `${title} - ${logement.title}`;
+    });
     return (
         <>
             <Carousel pictures={logement.pictures} />

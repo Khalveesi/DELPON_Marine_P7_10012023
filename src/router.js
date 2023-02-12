@@ -12,7 +12,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home />,
+                element: <Home title="Kasa - Accueil" />,
                 loader: () => {
                     return {
                         logements,
@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/logement/:id",
-                element: <Logement />,
+                element: <Logement title="Kasa - Logement" />,
                 loader: ({ params }) => {
                     const logement = logements.find(
                         (logement) => logement.id === params.id
@@ -36,11 +36,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/about",
-                element: <About />,
+                element: <About title="Kasa - A propos" />,
             },
             {
                 path: "*",
-                element: <NotFound />,
+                element: <NotFound title="Kasa - Not Found" />,
             },
         ],
     },

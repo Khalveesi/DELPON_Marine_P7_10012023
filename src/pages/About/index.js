@@ -1,8 +1,12 @@
 import "./style.scss";
 import Accordion from "../../components/Accordion";
 import backgroundAbout from "../../assets/background-about.png";
+import { useEffect } from "react";
 
-function About() {
+function About({ title }) {
+    useEffect(() => {
+        document.title = title;
+    });
     return (
         <>
             <section

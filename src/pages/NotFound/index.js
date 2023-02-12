@@ -1,7 +1,11 @@
 import "./style.scss";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
-function NotFound() {
+function NotFound({ title }) {
+    useEffect(() => {
+        document.title = title;
+    });
     return (
         <section className="not-found-section">
             <span className="font__color--primary error">404</span>

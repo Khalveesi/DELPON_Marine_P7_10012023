@@ -2,9 +2,13 @@ import "./style.scss";
 import Thumb from "../../components/Thumb";
 import backgroundHome from "../../assets/background-home.png";
 import { useLoaderData, Link } from "react-router-dom";
+import { useEffect } from "react";
 
-function Home() {
+function Home({ title }) {
     const { logements } = useLoaderData();
+    useEffect(() => {
+        document.title = title;
+    });
     return (
         <>
             <section
