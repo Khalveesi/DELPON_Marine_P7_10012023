@@ -2,6 +2,7 @@ import "./style.scss";
 import Tag from "../../components/Tag/index.js";
 import Accordion from "../../components/Accordion/index.js";
 import { useLoaderData } from "react-router-dom";
+import Carousel from "../../components/Carsousel";
 
 function Logement() {
     const { logement } = useLoaderData();
@@ -9,8 +10,8 @@ function Logement() {
     const range = [1, 2, 3, 4, 5];
     return (
         <>
-            <div className="temporary"></div>
-            <section className="logement__informations">
+            <Carousel pictures={logement.pictures} />
+            <section className="logement__informations logement__top-margin">
                 <div className="font__color--primary">
                     <div className="logement__location gap">
                         <div className="container--size">

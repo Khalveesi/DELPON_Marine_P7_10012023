@@ -4,9 +4,19 @@
     font-size: 24px;
     &__title {
         padding: 5px 10px;
+        display: flex;
+        justify-content: space-between;
     }
+
     &__content {
         background-color: #f6f6f6;
         padding: 18px 10px 10px 10px;
+    }
+    .chevron {
+        transition: transform 300ms ease-in-out;
+    }
+
+    &.open .chevron {
+        transform: rotate(180deg);
     }
 }
